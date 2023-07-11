@@ -11,12 +11,10 @@ const SignUp = () => {
     })
 
 
-    const [data, setData] = useState([])
+    const [data] = useState([])
 
     const getData = (e) => {
-        // console.log(e.target.value)
         const {value, name} = e.target;
-        // console.log(value, name)
 
         setInputVal (()=>{
             return {
@@ -61,19 +59,19 @@ const SignUp = () => {
                     <div className='card-body'>
                         <form>
                             <div className="mb-3">
-                                <label for="name" className="form-label">Name</label>
+                                <label htmlFor="name" className="form-label">Name</label>
                                 <input type="text" className="form-control" id="name" name='name' onChange={getData} />
                             </div>
                             <div className="mb-3">
-                                <label for="email" className="form-label">Email address</label>
+                                <label htmlFor="email" className="form-label">Email address</label>
                                 <input type="email" className="form-control" id="email" name='email' onChange={getData}  />
                             </div>
                             <div className="mb-3">
-                                <label for="date" className="form-label">Date</label>
+                                <label htmlFor="date" className="form-label">Date</label>
                                 <input type="date" className="form-control" id="date" name='date' onChange={getData} />
                             </div>
                             <div className="mb-3">
-                                <label for="password" className="form-label">Password</label>
+                                <label htmlFor="password" className="form-label">Password</label>
                                 <input type="password" className="form-control" id="password" name='password' onChange={getData}  />
                             </div>                           
                             <button type="submit" className="btn btn-primary" onClick={addData}>Submit</button>

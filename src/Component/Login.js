@@ -68,11 +68,11 @@ const Login = () => {
                     <div className='card-body'>
                         <form>                            
                             <div className="mb-3">
-                                <label for="email" className="form-label">Email address</label>
+                                <label htmlFor="email" className="form-label">Email address</label>
                                 <input type="email" className="form-control" id="email" name='email' onChange={getData}  />
                             </div>                           
                             <div className="mb-3">
-                                <label for="password" className="form-label">Password</label>
+                                <label htmlFor="password" className="form-label">Password</label>
                                 <input type="password" className="form-control" id="password" name='password' onChange={getData}  />
                             </div>                           
                             <button type="submit" className="btn btn-primary" onClick={addData}>Submit</button>
